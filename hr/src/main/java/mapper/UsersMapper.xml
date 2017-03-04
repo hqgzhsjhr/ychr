@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mapper.UsersMapper">
+  <resultMap id="BaseResultMap" type="com.yc.bean.Users">
+    <id column="u_id" jdbcType="SMALLINT" property="uId" />
+    <result column="u_name" jdbcType="VARCHAR" property="uName" />
+    <result column="role" jdbcType="VARCHAR" property="role" />
+    <result column="u_true_name" jdbcType="VARCHAR" property="uTrueName" />
+    <result column="u_password" jdbcType="VARCHAR" property="uPassword" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    u_id, u_name, role, u_true_name, u_password
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Short" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from users
+    where u_id = #{uId,jdbcType=SMALLINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Short">
+    delete from users
+    where u_id = #{uId,jdbcType=SMALLINT}
+  </delete>
+  <insert id="insert" parameterType="com.yc.bean.Users">
+    insert into users (u_id, u_name, role, 
+      u_true_name, u_password)
+    values (#{uId,jdbcType=SMALLINT}, #{uName,jdbcType=VARCHAR}, #{role,jdbcType=VARCHAR}, 
+      #{uTrueName,jdbcType=VARCHAR}, #{uPassword,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.yc.bean.Users">
+    insert into users
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="uId != null">
+        u_id,
+      </if>
+      <if test="uName != null">
+        u_name,
+      </if>
+      <if test="role != null">
+        role,
+      </if>
+      <if test="uTrueName != null">
+        u_true_name,
+      </if>
+      <if test="uPassword != null">
+        u_password,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="uId != null">
+        #{uId,jdbcType=SMALLINT},
+      </if>
+      <if test="uName != null">
+        #{uName,jdbcType=VARCHAR},
+      </if>
+      <if test="role != null">
+        #{role,jdbcType=VARCHAR},
+      </if>
+      <if test="uTrueName != null">
+        #{uTrueName,jdbcType=VARCHAR},
+      </if>
+      <if test="uPassword != null">
+        #{uPassword,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.yc.bean.Users">
+    update users
+    <set>
+      <if test="uName != null">
+        u_name = #{uName,jdbcType=VARCHAR},
+      </if>
+      <if test="role != null">
+        role = #{role,jdbcType=VARCHAR},
+      </if>
+      <if test="uTrueName != null">
+        u_true_name = #{uTrueName,jdbcType=VARCHAR},
+      </if>
+      <if test="uPassword != null">
+        u_password = #{uPassword,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where u_id = #{uId,jdbcType=SMALLINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.yc.bean.Users">
+    update users
+    set u_name = #{uName,jdbcType=VARCHAR},
+      role = #{role,jdbcType=VARCHAR},
+      u_true_name = #{uTrueName,jdbcType=VARCHAR},
+      u_password = #{uPassword,jdbcType=VARCHAR}
+    where u_id = #{uId,jdbcType=SMALLINT}
+  </update>
+</mapper>
