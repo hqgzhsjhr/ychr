@@ -1,0 +1,6 @@
+2017-03-06 19:14:48  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1117681: startup date [Mon Mar 06 19:14:48 CST 2017]; root of context hierarchy
+2017-03-06 19:14:48  [ main:58 ] - [ INFO ]  Loading XML bean definitions from class path resource [beans.xml]
+2017-03-06 19:14:49  [ main:1627 ] - [ INFO ]  Loading properties file from class path resource [db.properties]
+2017-03-06 20:01:28  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1846d05: startup date [Mon Mar 06 20:01:28 CST 2017]; root of context hierarchy
+2017-03-06 20:01:28  [ main:60 ] - [ INFO ]  Loading XML bean definitions from class path resource [beans.xml]
+2017-03-06 20:01:28  [ main:468 ] - [ INFO ]  Loading properties file from class path resource [db.properties]

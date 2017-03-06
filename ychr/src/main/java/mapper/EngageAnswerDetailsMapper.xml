@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="mapper.EngageAnswerDetailsMapper" >
+  <resultMap id="BaseResultMap" type="com.yc.bean.EngageAnswerDetails" >
+    <id column="and_id" property="andId" jdbcType="SMALLINT" />
+    <result column="answer_number" property="answerNumber" jdbcType="VARCHAR" />
+    <result column="subject_id" property="subjectId" jdbcType="SMALLINT" />
+    <result column="answer" property="answer" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    and_id, answer_number, subject_id, answer
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Short" >
+    select 
+    <include refid="Base_Column_List" />
+    from engage_answer_details
+    where and_id = #{andId,jdbcType=SMALLINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Short" >
+    delete from engage_answer_details
+    where and_id = #{andId,jdbcType=SMALLINT}
+  </delete>
+  <insert id="insert" parameterType="com.yc.bean.EngageAnswerDetails" >
+    insert into engage_answer_details ( answer_number, subject_id, 
+      answer)
+    values ( #{answerNumber,jdbcType=VARCHAR}, #{subjectId,jdbcType=SMALLINT}, 
+      #{answer,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.yc.bean.EngageAnswerDetails" >
+    insert into engage_answer_details
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="andId != null" >
+        and_id,
+      </if>
+      <if test="answerNumber != null" >
+        answer_number,
+      </if>
+      <if test="subjectId != null" >
+        subject_id,
+      </if>
+      <if test="answer != null" >
+        answer,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="andId != null" >
+        #{andId,jdbcType=SMALLINT},
+      </if>
+      <if test="answerNumber != null" >
+        #{answerNumber,jdbcType=VARCHAR},
+      </if>
+      <if test="subjectId != null" >
+        #{subjectId,jdbcType=SMALLINT},
+      </if>
+      <if test="answer != null" >
+        #{answer,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.yc.bean.EngageAnswerDetails" >
+    update engage_answer_details
+    <set >
+      <if test="answerNumber != null" >
+        answer_number = #{answerNumber,jdbcType=VARCHAR},
+      </if>
+      <if test="subjectId != null" >
+        subject_id = #{subjectId,jdbcType=SMALLINT},
+      </if>
+      <if test="answer != null" >
+        answer = #{answer,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where and_id = #{andId,jdbcType=SMALLINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.yc.bean.EngageAnswerDetails" >
+    update engage_answer_details
+    set answer_number = #{answerNumber,jdbcType=VARCHAR},
+      subject_id = #{subjectId,jdbcType=SMALLINT},
+      answer = #{answer,jdbcType=VARCHAR}
+    where and_id = #{andId,jdbcType=SMALLINT}
+  </update>
+</mapper>

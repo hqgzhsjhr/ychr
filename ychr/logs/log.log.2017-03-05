@@ -1,0 +1,29 @@
+2017-03-05 08:46:45  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@9b6976: startup date [Sun Mar 05 08:46:45 CST 2017]; root of context hierarchy
+2017-03-05 08:46:45  [ main:245 ] - [ INFO ]  Loading XML bean definitions from class path resource [beans.xml]
+2017-03-05 08:46:48  [ main:2784 ] - [ INFO ]  Loading properties file from class path resource [db.properties]
+2017-03-05 08:47:05  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@9b6976: startup date [Sun Mar 05 08:47:05 CST 2017]; root of context hierarchy
+2017-03-05 08:47:05  [ main:77 ] - [ INFO ]  Loading XML bean definitions from class path resource [beans.xml]
+2017-03-05 08:47:06  [ main:559 ] - [ INFO ]  Loading properties file from class path resource [db.properties]
+2017-03-05 08:49:55  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@19bf795: startup date [Sun Mar 05 08:49:55 CST 2017]; root of context hierarchy
+2017-03-05 08:49:55  [ main:50 ] - [ INFO ]  Loading XML bean definitions from class path resource [beans.xml]
+2017-03-05 08:49:55  [ main:425 ] - [ INFO ]  Loading properties file from class path resource [db.properties]
+2017-03-05 08:50:26  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@bb5e2d: startup date [Sun Mar 05 08:50:26 CST 2017]; root of context hierarchy
+2017-03-05 08:50:27  [ main:51 ] - [ INFO ]  Loading XML bean definitions from class path resource [beans.xml]
+2017-03-05 08:50:27  [ main:430 ] - [ INFO ]  Loading properties file from class path resource [db.properties]
+2017-03-05 08:54:55  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2cc04e: startup date [Sun Mar 05 08:54:55 CST 2017]; root of context hierarchy
+2017-03-05 08:54:55  [ main:47 ] - [ INFO ]  Loading XML bean definitions from class path resource [beans.xml]
+2017-03-05 08:54:55  [ main:439 ] - [ INFO ]  Loading properties file from class path resource [db.properties]
+2017-03-05 08:54:57  [ main:1780 ] - [ INFO ]  Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2017-03-05 08:54:57  [ main:1809 ] - [ INFO ]  SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+2017-03-05 08:55:03  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@19bf795: startup date [Sun Mar 05 08:55:03 CST 2017]; root of context hierarchy
+2017-03-05 08:55:03  [ main:46 ] - [ INFO ]  Loading XML bean definitions from class path resource [beans.xml]
+2017-03-05 08:55:04  [ main:388 ] - [ INFO ]  Loading properties file from class path resource [db.properties]
+2017-03-05 08:55:05  [ main:1300 ] - [ INFO ]  Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2017-03-05 08:55:05  [ main:1326 ] - [ INFO ]  SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+2017-03-05 09:16:24  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@9b6976: startup date [Sun Mar 05 09:16:24 CST 2017]; root of context hierarchy
+2017-03-05 09:16:24  [ main:52 ] - [ INFO ]  Loading XML bean definitions from class path resource [beans.xml]
+2017-03-05 09:16:25  [ main:393 ] - [ INFO ]  Loading properties file from class path resource [db.properties]
+2017-03-05 15:14:46  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@128ed5f: startup date [Sun Mar 05 15:14:46 CST 2017]; root of context hierarchy
+2017-03-05 15:14:46  [ main:46 ] - [ INFO ]  Loading XML bean definitions from class path resource [beans.xml]
+2017-03-05 15:14:47  [ main:492 ] - [ INFO ]  Loading properties file from class path resource [db.properties]
+2017-03-05 15:14:47  [ main:1101 ] - [ INFO ]  humanFile...
